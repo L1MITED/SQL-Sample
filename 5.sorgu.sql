@@ -1,0 +1,1 @@
+SELECT ad, soyad, birim_ad, unvan_calisan, ikramiye_ucret FROM calisanlar JOIN birimler ON calisan_birim_id = birim_id JOIN unvan ON calisan_id = unvan_calisan_id JOIN ikramiye  ON calisan_id = ikramiye_calisan_id;
