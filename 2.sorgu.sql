@@ -1,1 +1,1 @@
-SELECT ad, soyad, maas FROM calisanlar WHERE maas = (SELECT MAX(maas) FROM calisanlar);
+SELECT ad, soyad, CAST(maas AS INT) AS maas FROM calisanlar WHERE CAST(maas AS INT) = (SELECT MAX(CAST(maas AS INT)) FROM calisanlar)
